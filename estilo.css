@@ -1,48 +1,82 @@
-body{
-    margin: 15;
-    padding:0;
-    background-color: #F5F5F5;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+body {
+    margin: 15px; /* Añadí "px" a la propiedad margin */
+    padding: 0;
 }
 
-h1{
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-    height: 10vh;
-    line-height: 10vh;
-    background-color: #a4e877;
+h1 {
+    text-transform: uppercase; /* poner en mayúsculas */
+    background-color: #af3ec8;
     color: #fff;
-    border-radius: 10px 10px;
-    margin-bottom: 3%;
+    text-align: center;
+
+}
+h2{
+    text-align: center;
+    color: #af3ec8;
+    text-decoration: underline;
 }
 
-.container{
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.container {
+    height: 90vh;
 }
 
-.sidebar{
+.sidebar {
     width: 25%;
     height: 100%;
-    background-color: #e488b1;
-    border-radius: 10px 10px;
-    margin-bottom: 3%;
+    background-color: #d3a5ad;
+    border-radius: 10px; 
+    margin-right: 3%;
+    float: left; /* Usando float en lugar de flexbox */
 }
 
-.sidebar-content{
+.sidebar-content {
     width: 90%;
     height: 4%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #899bbc;
-    border-radius: 10px;
     text-align: center;
+    background-color: #e36e8b;
     margin: 5%;
+    border-radius: 10px; 
+}
+
+.content {
+    width: 70%;
+    height: 100%;
+    border-radius: 10px; 
+    float: left; 
+    margin-left: 2%; 
+}
+
+main {
+    height: 64%;
+    background-color: #988ddb;
+    border-radius: 10px; 
+}
+
+.main-content {
+    width: 96%;
+    height: 5%;
+    text-align: center;
+    background-color: #b0a9e6;
+    margin: 2%;
+    border-radius: 10px; 
+}
+
+#imagen {
+    max-width: 50%; /* Establece el ancho máximo al 100% del contenedor */
+    height: 50%; /* Permite que la altura se ajuste automáticamente */
+    border-radius: 10px;
+    margin: 15px auto; /* Alinea la imagen en el centro horizontalmente */
+    display: block; /* Asegura que la imagen sea un bloque y no un elemento en línea */
+    margin: 0 auto; /* Alinea la imagen en el centro horizontalmente */
+}
+
+footer {
+    height: 30%;
+    background-color: #94d489;
+    color: #fff;
+    text-align: center;
+    line-height: 10vh;
+    border-radius: 10px; 
+    margin-top: 3%;
+    clear: both; /* Usando clear en lugar de flexbox */
 }
